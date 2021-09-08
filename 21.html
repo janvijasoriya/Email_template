@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      /* utility */
+
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+      .text-center {
+        text-align: center !important;
+      }
+
+      .font-gray {
+        color: #8a8a8a !important;
+      }
+
+      .margin-bottom {
+        margin-bottom: 1rem !important;
+      }
+
+      .margin-bottom-big {
+        margin-bottom: 1.5rem !important;
+      }
+
+      .default-paragraph {
+        font-size: 0.9rem !important;
+        font-weight: 400 !important;
+      }
+      /* fontsize reset */
+      html {
+        font-size: 62.5% !important;
+      }
+      body {
+        box-sizing: border-box !important;
+        font-family: "Poppins", sans-serif !important;
+      }
+      /* Properties */
+      main {
+        width: 42vw !important;
+        margin: 0 auto !important;
+        padding: 40px;
+      }
+      .inside-border {
+        border: 2px solid #4b2880 !important;
+        border-radius: 1.5rem !important;
+      }
+      .content {
+        padding: 2.2rem !important;
+        width: 100% !important;
+      }
+
+      .logo {
+        /* float: left; */
+        height: 2.5rem !important;
+        /* width: 2.5rem; */
+      }
+
+      .horizontal-line {
+        background: #efefef !important;
+        width: 80%;
+      }
+
+      .success-text {
+        font-size: 1.5rem !important;
+        font-weight: 600 !important;
+      }
+      .success-icon {
+        padding: .1rem 0.5rem !important;
+        border-radius: 100px !important;
+        background: #0f9d58 !important;
+        color: #fff;
+      }
+      .background{
+        margin: 0 0 !important;
+        padding: .5rem !important;
+        width: 80% !important;
+      
+        background-color: #F7F7F7 !important;
+      }
+
+      .warning-icon{
+        padding: .1rem .8rem !important;
+        border-radius: 100px !important;
+
+        height: 10px;
+background:#F4B400;
+color: #000;
+      }
+      .amount {
+        font-size: 2.4rem !important;
+        font-weight: 600 !important;
+      }
+      .filler {
+        font-size: 1rem !important;
+        line-height: 2rem !important;
+      }
+      
+
+      .bundle-name {
+        color: #4b2880 !important;
+        font-size: 1.6rem !important;
+        font-weight: 600 !important;
+      }
+      .api-and-name {
+        font-size: 1.6rem !important;
+        font-weight: 600 !important;
+      }
+
+      a {
+        text-decoration: none !important;
+        color: #4b2880 !important;
+      }
+
+      .button-main {
+        display: block !important;
+        padding: 1rem 1rem !important;
+        text-align: center !important;
+        font-size: 1.6rem !important;
+        font-weight: 400 !important;
+        border-radius: 1rem !important;
+        background: #4b2880 !important;
+        color: #fff !important;
+        width: 45% !important;
+      }
+
+      .need-help {
+        font-size: 1.6rem !important;
+      }
+      .image-link > img {
+        width: 3.6rem !important;
+      }
+      #fb {
+        width: 3.1rem !important;
+      }
+      .image-link:not(:last-child) {
+        margin-right: 1.5rem !important;
+      }
+      .footer {
+        margin: 0 auto !important;
+        padding: 3rem !important;
+        width: 80% !important;
+        border-radius: 1.5rem !important;
+        background-color: #f9f9f9 !important;
+      }
+
+      .footer :first-child {
+        font-weight: 500 !important;
+        font-size: 1.6rem !important;
+      }
+    </style>
+  </head>
+  <body>
+    <main style="width: 50vh; margin: 0 auto">
+      <section class="inside-border margin-bottom-big">
+        <div class="content">
+          <img class="logo margin-bottom" src="./images/icon.png" alt="logo" />
+          <hr class="horizontal-line margin-bottom-big" />
+          <h4 class="success-text">
+            API key added without IP whitelisting&nbsp;
+            <span class="warning-icon">&#9888;</span>
+
+          </h4>
+          <h1 class="amount margin-bottom-big">Shubhang Spot 1</h1>
+          
+          
+
+          <div class="margin-bottom">
+            <p style="color: #8a8a8a !important" class="filler font-gray">from</p>
+            <a
+              style="
+                text-decoration: none !important;
+                text-decoration: none;
+                font-size: 1.6rem !important;
+                font-weight: 600 !important;
+              "
+              href="#"
+              class=" margin-bottom-big"
+              >Binance</a
+            >
+          </div>
+
+          
+         
+          <div class="margin-bottom-big">
+            <p style="color: #8a8a8a !important" class="filler font-gray">
+              May 13, 2021 14:49:19
+            </p>
+            
+          </div>
+
+          <div  class="margin-bottom-big filler"> 
+            <p>we strongly recommend doing the following:</p>
+                    <ol>
+            <li>Navigate to the "keyname" API key using the view Exchange API key button below</li>
+            <li>in "IP access Restrictions", select "Restrict access to trusted IPs only"</li>
+            <li>Paste the following IP address in the given box without any modifications.</li>
+          </ol>
+          
+                </div>  
+
+                <div class="margin-bottom-big">
+                  <p style="font-size: 1rem !important;" class="background">3.94.44.146 34.200.151.171 184.73.95.117 54.163.141.2 54.81.248.3754.88.23.9 52.200.53.174</p>
+              </div>
+                <div class="margin-bottom-big filler">
+                  <p>Here's why you should do it</p>
+                  <ul>
+                    <li>The "Enable Spot/Margin Trading" permission will expire in 30 days if Mudrex IPs are not whitelisted.</li>
+                    <li>Post 30 days, Mudrex will not be able to places trades using this account.</li>
+                    
+                  </ul> 
+                </div>
+
+
+       
+
+
+          
+          
+
+        
+         
+
+        
+          
+          
+          <a
+            style="
+              text-decoration: none !important;
+              text-decoration: none;
+              display: block !important;
+              padding: 1rem 1rem !important;
+              text-align: center !important;
+              font-size: 1.3rem !important;
+              font-weight: 400 !important;
+              border-radius: 1rem !important;
+              background: #4b2880 !important;
+              color: #fff !important;
+              width: 70% !important;
+            "
+            class="button-main margin-bottom-big"
+            href="#"
+            >View exchange API keys</a
+          >
+          <p></p>
+          <a style="font-size: 1.6rem !important" class="need-help" href="#"
+            >Need help? &gt;</a
+          >
+        </div>
+      </section>
+      <section class="outside-border">
+        <div class="footer text-center">
+          <p
+            style="font-size: 0.9rem !important; font-weight: 400 !important"
+            class="default-paragraph"
+          >
+            Lorem ipsum dolor
+          </p>
+          <p style="color: #8a8a8a !important" class="filler font-gray">
+            Lorem ipsum dolor
+          </p>
+        </div>
+        <div class="address"></div>
+        <p
+          style="color: #8a8a8a !important"
+          class="filler font-gray text-center margin-bottom-big"
+        >
+          Mudrex Inc.<br />
+          1013 Centre Road, Suite 403-B, Wilmington, Delaware, USA
+        </p>
+        <div class="text-center margin-bottom-big">
+          <a
+            style="margin-right: 1.5rem !important"
+            class="image-link"
+            href="#"
+          >
+            <img
+              style="width: 2rem !important"
+              src="https://i.ibb.co/BZSSTw1/discord.png"
+              alt="discord"
+            />
+          </a>
+          <a
+            style="margin-right: 1.5rem !important"
+            class="image-link"
+            href="#"
+          >
+            <img
+              style="width: 2rem !important"
+              src="https://i.ibb.co/9tmNjDv/medium.png"
+              alt="medium"
+            />
+          </a>
+          <a
+            style="margin-right: 1.5rem !important"
+            class="image-link"
+            href="#"
+          >
+            <img
+              style="width: 2rem !important"
+              src="https://i.ibb.co/9tmNjDv/medium.png"
+              alt="telegram"
+            />
+          </a>
+          <a
+            style="margin-right: 1.5rem !important"
+            class="image-link"
+            href="#"
+          >
+            <img
+              style="width: 2rem !important"
+              id="fb"
+              src="https://i.ibb.co/1JSD1HS/facebook.png"
+              alt="facebook"
+            />
+          </a>
+          <a
+            style="margin-right: 1.5rem !important"
+            class="image-link"
+            href="#"
+          >
+            <img
+              style="width: 2rem !important"
+              src="./images/twitter.png"
+              alt="twitter"
+            />
+          </a>
+        </div>
+
+      
+      </section>
+    </main>
+  </body>
+</html>
